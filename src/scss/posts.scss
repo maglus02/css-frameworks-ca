@@ -1,0 +1,49 @@
+@import "variables";
+/* /src/scss/_variables.scss */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.user-posts {
+    .post {
+        background-color: $gray-200;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .user-profile {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .username {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .post-content {
+            p {
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+
+            img {
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .post-actions {
+            margin-top: 10px;
+
+            button {
+                margin-right: 10px;
+            }
+        }
+    }
+}

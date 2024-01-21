@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <link rel="stylesheet" href="../dist/css/feed.css">
+    <link rel="stylesheet" href="../dist/css/posts.css">
+    <link rel="stylesheet" href="../dist/css/layout.css">
+    <script src="https://kit.fontawesome.com/8404d11a1b.js" crossorigin="anonymous"></script>
+    <title>Feed</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 order-md-1 order-1">
+                <div class="logo-container">
+                    <h1 class="logo">Framework</h1>
+                </div>
+                <div class="d-grid gap-2 buttons-container">
+                    <a href="../feed/"><button class="btn active"><i class="fa-solid fa-house"></i> Home</button></a>
+                    <a href="../profile/"><button class="btn"><i class="fa-solid fa-user"></i> Profile</button></a>
+                    <a href="../"><button class="btn"><i class="fa-solid fa-right-from-bracket"></i> Log out</button></a>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2 order-2 h-100 middle-column">
+                <div class="feed-header d-flex justify-content-between mb-3">
+                    <h2>Feed</h2>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="sortingDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort By: Newest
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="sortingDropdown">
+                            <a class="dropdown-item" href="#">Newest</a>
+                            <a class="dropdown-item" href="#">Oldest</a>
+                            <a class="dropdown-item" href="#">Most Liked</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-form">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="postText" rows="3"
+                                placeholder="What's the status?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="mediaInput" class="btn btn-primary btn-block">
+                                <span class="d-block mx-auto">Add Media</span>
+                            </label>
+                            <input type="file" class="form-control-file d-none" id="mediaInput">
+                        </div>
+                        <div class="form-group d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Post</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-posts mt-3">
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@lucas</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>A journey of a thousand miles begins with a single step.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@lucas</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>My superpower is _______</p>
+                            <img src="../src/images/superpower.jpg" alt="Post Image" class="img-fluid mt-3">
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@sandy</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>Which one thing do you think needs to be changed in the world or around you?</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@robert</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>There should be a millenial edition of Monopoly where you just walk round the board
+                                paying rent, never able to buy anything.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@sandy</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>So many books, so little time.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@sofia</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>I recognize click bait almost every time, but still want to know what that child
+                                celebrity looks like today.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@lucas</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>Day by day, what you Choose, what you think and what you Do is who you Become.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="user-info">
+                            <img src="../src/images/avatar.png" alt="User Profile"
+                                class="img-fluid rounded-circle user-profile">
+                            <h6 class="username">@lucas</h6>
+                        </div>
+                        <div class="post-content">
+                            <p>What would you rather do on a Sunday?</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="btn btn-sm btn-outline-primary">Like</button>
+                            <button class="btn btn-sm btn-outline-secondary">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 order-md-3 order-3">
+                <div class="search-container input-group">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <div class="policies">
+                    <div class="row">
+                        <a href="#" class="col">
+                            <p>Terms of Service</p>
+                        </a>
+                        <a href="#" class="col">
+                            <p>Privacy Policy</p>
+                        </a>
+                    </div>
+                    <p>© 2024 Framework</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar d-md-none">
+        <a href="../feed/"><button class="btn active"><i class="fa-solid fa-house"></i></button></a>
+        <a href="../profile/"><button class="btn"><i class="fa-solid fa-user"></i></button></a>
+        <a href="#"><button class="btn"><i class="fa-solid fa-search"></i></button></a>
+    </div>
+</body>
+
+</html>

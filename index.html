@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <title>Framework</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Framework</h1>
+                        <form action="profile/">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Username" required>
+                                <label for="floatingInput">Username</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password" pattern=".{8,}" required title="Password must be at least 8 characters">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary" type="submit">Log in</button>
+                            </div>
+                        </form>
+                        <p class="card-text">Don't have an account? <a href="#">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>© 2024 Framework</p>
+        </div>
+    </footer>
+</body>
+
+</html>
