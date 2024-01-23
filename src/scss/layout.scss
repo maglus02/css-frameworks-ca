@@ -18,13 +18,18 @@
 }
 
 .buttons-container {
-    button {
+    a {
         text-align: left !important;
         font-size: 24px;
     }
 
-    button:hover {
+    a:hover {
         box-shadow: inset 0 0 5px #0000002a !important;
+        color: $primary !important;
+    }
+
+    .active {
+        color: $primary !important;
     }
 }
 
@@ -64,9 +69,17 @@
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
 
-    .btn {
+    a {
         font-size: 20px;
         transition: 0.2s ease !important;
+    }
+
+    a:hover {
+        color: $primary !important;
+    }
+
+    .active {
+        color: $primary !important;
     }
 }
 
