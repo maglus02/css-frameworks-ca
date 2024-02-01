@@ -11905,6 +11905,12 @@ textarea.form-control-lg {
   .profile-header .stats-row {
     margin-top: 40px;
   }
+  .profile-header img {
+    width: 390px;
+  }
+  .profile-header .col-sm-4 {
+    padding: 0px 60px;
+  }
 }
 .logout-mobile {
   margin-right: 10px;
