@@ -3864,15 +3864,15 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
-  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-color: #292929;
+  --bs-navbar-hover-color: #7000FF;
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
-  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-active-color: #7000FF;
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-color: #7000FF;
+  --bs-navbar-brand-hover-color: #7000FF;
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -11860,6 +11860,7 @@ textarea.form-control-lg {
   font-size: 22px;
   text-align: center;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 
 .profile-header {
@@ -11889,15 +11890,18 @@ textarea.form-control-lg {
 .user-info h2, .user-info .h2 {
   font-size: 24px;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 .user-info h3, .user-info .h3 {
   font-size: 19px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .middle-h {
     display: none;
   }
+}
+@media (max-width: 575.98px) {
   .profile-header .stats-row {
     margin-top: 40px;
   }

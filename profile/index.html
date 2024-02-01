@@ -31,14 +31,15 @@
           <a href="../" class="btn"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-2 h-100 middle-column">
+      <div class="col-md-6 col-sm-12 order-sm-2 order-2 h-100 middle-column">
         <h2 class="middle-h">@lucas</h2>
         <div class="profile-header row">
-          <div class="col-md-4">
-            <img src="../src/images/avatar.png" alt="Human design on a gray background" class="img-fluid rounded-circle">
+          <div class="col-sm-4">
+            <img src="../src/images/avatar.png" alt="Human design on a gray background"
+              class="img-fluid rounded-circle">
           </div>
 
-          <div class="col-md-7 stats-row ms-md-auto">
+          <div class="col-sm-7 stats-row ms-sm-auto">
             <div class="row">
               <div class="col-4">
                 <h6>Posts</h6>
@@ -140,15 +141,26 @@
   </div>
 
   <div class="d-md-none position-absolute top-0 end-0 mt-3 logout-mobile">
-    <a href="../" class="btn btn-outline-primary" title="Log out"><i
-          class="fa-solid fa-right-from-bracket"></i></a>
+    <a href="../" class="btn btn-outline-primary" title="Log out"><i class="fa-solid fa-right-from-bracket"></i></a>
   </div>
 
-  <div class="bottom-bar d-md-none">
-    <a href="../feed/" class="btn"><i class="fa-solid fa-house"></i></a>
-    <a href="../profile/" class="btn active"><i class="fa-solid fa-user"></i></a>
-    <a href="#" class="btn"><i class="fa-solid fa-search"></i></a>
-  </div>
+  <nav class="navbar fixed-bottom navbar-expand bg-body-tertiary d-md-none">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="../feed/" class="nav-link"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="../profile/" class="nav-link active"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fa-solid fa-search"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </body>
 
 </html>

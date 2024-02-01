@@ -7,6 +7,7 @@
         font-size: 22px;
         text-align: center;
         margin-bottom: 50px;
+        font-weight: 600;
     }
 }
 
@@ -44,6 +45,7 @@
     h2 {
         font-size: 24px;
         margin-bottom: 30px;
+        font-weight: 600;
     }
 
     h3 {
@@ -51,13 +53,15 @@
     }
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(md) {
     .middle {
         &-h {
             display: none;
         }
     }
+}
 
+@include media-breakpoint-down(sm) {
     .profile-header {
         .stats-row {
             margin-top: 40px;
